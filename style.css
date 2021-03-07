@@ -1,0 +1,410 @@
+html , body {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Libre Franklin' , sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 300;
+}
+p:hover , h1:hover , h3:hover {
+    
+    color: hsl(223, 87%, 63%);
+}
+i:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+.container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15%;
+    justify-content: center;
+}
+img:hover {
+    background-color: hsla(223, 87%, 63%, 0.226);
+    border-radius: 10px;
+}
+.image {
+    width: 85%;
+    padding-top: 15%;
+}
+.image img {
+    width: 100%;
+}
+h1 {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    font-size: 2rem;
+}
+.logo {
+    width: 85%;
+    text-align: center;
+}
+b {
+    color: hsl(209, 33%, 12%);
+    font-weight: 700;
+}
+h3 {
+    color: hsl(0, 0%, 59%);
+    font-weight: 600;
+    width: 100%;
+    font-size: 1.2rem;
+}
+.logo img {
+    width: 20%;
+}
+
+.heading {
+    height: 15%;
+    width: 85%;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 75%;
+    padding-top: 2%;
+    height: 110px;
+}
+#error {
+    display: none;
+    color: hsl(354, 100%, 66%);
+    font-size: 9px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+    margin: 1px;
+}
+#error2 {
+    display: none;
+    color: hsl(354, 100%, 66%);
+    font-size: 9px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+    margin: 1px;
+}
+#email {
+    border-radius: 20px;
+    height: 40px;
+    border: 1px solid hsl(223, 100%, 88%);
+    outline: none;
+}
+#email:focus {
+    outline: none;
+}
+input:required {
+    box-shadow: none;
+}
+#submit {
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: rgba(255, 255, 255, 0.877);
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px 5px 5px hsla(223, 87%, 63%, 0.274);
+    cursor: pointer;
+}
+button {
+    height: 55px;
+    outline: none;
+}
+#submit:hover {
+    background-color:  hsla(223, 87%, 63%, 0.76);
+}
+::-moz-placeholder {
+    color:  hsla(0, 0%, 59%, 0.753);
+}
+.icons {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end;
+    padding-top: 30%;
+}
+.fab {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: hsl(223, 87%, 63%);
+    text-align: center;
+    border: 1px solid hsla(0, 0%, 59%, 0.233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+input#email {
+    text-indent: 20px;
+}
+.fab::before {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: hsl(0, 0%, 59%);
+    font-size: 9px;
+    padding-top: 5%;
+}
+
+.attribution { 
+    font-size: 10px; 
+    text-align: -webkit-center;
+    width: 100%;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media ( orientation: landscape){
+   form {
+       display: flex;
+       flex-direction: row;
+       width: 45%;
+       justify-content: space-around;
+       position: relative;
+       padding-top: 0;
+       height: 80px;
+    }
+    .image {
+        padding-top: 0;
+        width: 40%;
+    }
+    .logo {
+        width: 40%;
+        padding-top: 5%;
+    }
+    .heading {
+        height: 15%;
+    }
+    .container {
+        padding-top: 0;
+        height: 95%;
+    }
+    #email {
+        width: 60%;
+        height: 40px;
+    }
+    #submit {
+        width: 35%;
+        height: 40px;
+        font-size: 9px;
+    }
+    h1 {
+        margin-bottom: 1%;
+        font-size: 3rem;
+    }
+    h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+    body {
+        font-size: 10px;
+    }
+    .icons {
+        width: 15%;
+        padding-top: 5%;
+    }
+    .fab {
+        font-size: 9px;
+    }
+    .footer {
+        font-size: 8px;
+        height: 10%;
+    }
+    #error {
+        position: absolute;
+        left: 10%;
+        bottom: 15%;
+    }
+    #error2 {
+        position: absolute;
+        left: 10%;
+        bottom: 0;
+    }
+    .logo img {
+        width: 20%;
+    }
+
+}
+@media (min-width: 900px){
+    form {
+        width: 50%;
+        height: 20%;
+    }
+    .image {
+        width: 60%;
+        padding-top: 5%;
+    }
+    .icons {
+        width: 15%;
+    }
+    .footer {
+        height: 10%;
+    }
+    #email {
+        border-radius: 30px;
+        font-size: 15px;
+    }
+    #submit {
+        border-radius: 30px;
+        font-size: 15px;
+    }
+    body {
+        font-size: 20px;
+    }
+    #error {
+        font-size: 10px;
+    }
+    #error2 {
+        font-size: 10px;
+    }
+    .fab {
+        font-size: 12px;
+    }
+    .logo {
+        width: 50%;
+    }
+    h3 {
+        font-weight: 300;
+    }
+}
+@media(min-height: 1000px){
+    form {
+        width: 60%;
+        height: 150px;
+    }
+    .icons {
+        width: 20%;
+        padding-top: 20%;
+    }
+    .fab {
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+    }
+    #submit {
+        font-size: 15px;
+        height: 55px;
+        border-radius: 30px;
+    }
+    #email {
+        font-size: 15px;
+        height: 55px;
+        border-radius: 30px;
+    }
+    .image {
+        width: 70%;
+        padding-top: 10%;
+    }
+    .logo img {
+        width: 15%;
+    }
+    body {
+        font-size: 20px;
+    }
+    #error {
+        font-size: 10px;
+    }
+    #error2 {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .heading {
+        padding-top: 3%;
+    }
+}
+@media (min-width: 1200px){
+    .logo {
+        width: 40%;
+    }
+    html , body {
+        font-size: 20px;
+        
+    }
+    h1 , h3 {
+        font-weight: 300;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    form {
+        width: 45%;
+        padding-top: 0;
+    }
+    #submit {
+        width: 30%;
+        height: 55px;
+        font-size: 14px;
+    }
+    #email {
+        font-size: 12px;
+        height: 55px;
+        width: 60%;
+    }
+    .icons {
+        width: 10%;
+        padding-top: 5%;
+        height: 15%;
+    }
+    .image {
+        width: 40%;
+        padding-top: 0;
+        margin-top: 5%;
+        
+    }
+    .heading {
+        height: 25%;
+    }
+    .container {
+        padding-top: 5%;
+        height: 100%;
+    }
+    #error {
+        position: absolute;
+        left: 10%;
+        bottom: -15%;
+        height: 0;
+        font-size: 10px;
+    }
+    #error2 {
+        position: absolute;
+        left: 10%;
+        bottom: -35%;
+        height: 0;
+        font-size: 10px;
+    }
+    .footer {
+        height: 10%;
+        margin-top: 1%;
+    }
+}
+
+@media (height: 800px) {
+    form {
+        height: 10%;
+    }
+}
